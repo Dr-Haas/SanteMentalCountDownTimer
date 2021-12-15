@@ -153,7 +153,7 @@ textarea:focus,
 .button:focus {
   background: $mint;
   border: 2px solid $mint;
-  border-radius: 4px;
+  border-radius: 6px;
   color: change-color($black, $lightness: 20%);
   cursor: pointer;
   line-height: normal;
@@ -342,4 +342,58 @@ noscript .info-message {
   to {
     margin-top: 10%;
   }
+}
+
+/*TodoList*/
+
+.todoListMain{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 0 40px;
+}
+
+.ticketSpace{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.strike{
+  width: 250px;
+  text-decoration: line-through;
+  background-color: #fa576d;
+  margin:10px;
+  padding:10px 0px 10px 0px;
+  border-radius: 10px ;
+}
+
+.noStrike{
+  width: 250px;
+  background-color: #78fc6c;
+  margin:10px;
+  padding:10px 0px 10px 0px;
+  border-radius: 10px ;
+  color: black;
+}
+
+.clearButton{
+  margin: 10px 0 30px 0;
+  width: 200px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.submitButton{
+  width: 200px;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.inputTask{
+  width: 400px;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 10px 0;
 }

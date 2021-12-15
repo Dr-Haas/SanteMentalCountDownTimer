@@ -3,8 +3,11 @@ import moment from 'moment';
 import SettingsModal from './settings-modal';
 import Countdown from './countdown';
 import InfoMessage from './info-message';
+import TodoList from "./todo-list";
 
-const App = () => {
+
+
+function App() {
   const initialCountdownSettings = {
     dateValue: '',
     timeValue: '',
@@ -93,17 +96,26 @@ const App = () => {
   return (
     <React.Fragment>
       <header>
-        <h1 className="header-item">Sante Mental Countdown Timer</h1>
+        <h1 className="header-item">Sante Mentale Timer</h1>
         <div className="button-group header-item">
-          <button type="button" className="button header-button clear" onClick={() => clearCountdown()}>Clear</button>
-          <button type="button" className="button header-button settings" onClick={() => setModalVisibility(true)}>Settings</button>
+          <button type="button" className="button header-button clear" onClick={() => clearCountdown()}>Reset</button>
+          <button type="button" className="button header-button settings" onClick={() => setModalVisibility(true)}>Réglage</button>
         </div>
       </header>
       <main>
+        <h1>Sortie Santé Mentale</h1>
         {modalVisibility && <SettingsModal setModalVisibility={setModalVisibility} countdownSettings={countdownSettings} setCountdownSettings={setCountdownSettings} />}
         {countdownSettings.unixEndDate ? <Countdown countdownTimer={countdownTimer} unixEndDate={countdownSettings.unixEndDate} /> : <InfoMessage countdownInfoMessage={countdownInfoMessage} />}
+
+        <div style={{display : 'flex', width:'100%', margin: '20px 0 20px 0', justifyContent:'center'}}>
+          <h1> Todo List</h1>
+        </div>
+
+        <div style={{display : 'flex', width:'100%', margin: '20px 0', justifyContent:'flex-start'}}>
+          <TodoList />
+        </div>
       </main>
-      <footer>Created by <a href="https://autumnchris.github.io/portfolio" target="_blank">Gary Haas</a> &copy; {new Date().getFullYear()}</footer>
+      <footer>Created by <a href="https://bealy.io" target="_blank">Gary Haas</a> &copy; {new Date().getFullYear()}</footer>
     </React.Fragment>
   );
 }
