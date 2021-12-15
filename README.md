@@ -1,4 +1,4 @@
-# Countdown Timer
+# Mental Health Countdown Timer
 
 A React.js app that takes a submitted future date and displays a timer counting down to that date.
 
@@ -15,9 +15,6 @@ A React.js app that takes a submitted future date and displays a timer counting 
 * [Font Awesome](https://fontawesome.com)
 * [Google Fonts](https://fonts.google.com)
 
-## Demo
-
-View project demo at [https://autumnchris.github.io/countdown-timer](https://autumnchris.github.io/countdown-timer).
 
 ## Instructions
 
