@@ -348,7 +348,7 @@ noscript .info-message {
 
 .todoListMain{
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   align-items: center;
   margin: 0 0 0 40px;
 }

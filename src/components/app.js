@@ -111,7 +111,7 @@ function App() {
           <h1> Todo List</h1>
         </div>
 
-        <div style={{display : 'flex', width:'100%', margin: '20px 0', justifyContent:'flex-start'}}>
+        <div style={{display : 'flex', width:'100%', margin: '20px 0', justifyContent:'center'}}>
           <TodoList />
         </div>
       </main>

@@ -31,7 +31,6 @@ function TodoList() {
         <div className="todoListMain">
             <ToDoForm addTask={addTask}/>
             <ToDoList toDoList={toDoList} handleToggle={handleToggle} handleFilter={handleFilter}/>
-
         </div>
     )
 }
