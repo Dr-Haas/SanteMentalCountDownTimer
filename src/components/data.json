@@ -1,9 +1,9 @@
 [{
   "id": 1,
-  "task": "Give dog a bath",
+  "task": "Penser à jeter un coup d'oeil au compteur",
   "complete": true
 }, {
   "id": 2,
-  "task": "Do laundry",
+  "task": "Jeter un coup d'oeil au compteur",
   "complete": true
 }]

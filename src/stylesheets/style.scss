@@ -360,11 +360,11 @@ noscript .info-message {
 }
 
 .strike{
-  width: 250px;
+  width: 300px;
   text-decoration: line-through;
   background-color: #fa576d;
-  margin:10px;
-  padding:10px 0px 10px 0px;
+  margin: 10px 0;
+  padding: 20px 0px 20px 0px;
   border-radius: 10px ;
 }
 
@@ -382,6 +382,10 @@ noscript .info-message {
   width: 200px;
   padding: 10px;
   border-radius: 6px;
+}
+
+.noClearButton{
+  display: none;
 }
 
 .submitButton{
